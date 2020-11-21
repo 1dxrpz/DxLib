@@ -5,7 +5,7 @@ C# Console game engine
 # Getting Started
 
 # Creating a scene
-Reference
+### Reference 
 Scene(string name)
 ```c#
 Scene scene = new Scene();
@@ -13,5 +13,5 @@ Scene scene = new Scene();
 scene.Render();
 ```
 #Creating GameObject
-Reference 
+### Reference 
 Gameobject(`string name`, `int width`, `int height`)
