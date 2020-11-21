@@ -4,6 +4,29 @@ C# Console game engine
 
 # Getting Started
 
+# Accessing to Theatre
+Theatre is a abstract class obligated to manage scenes and debug project
+All layers either scenes allign in simple hierarchy:
+
+`.GetOverallInfo()`
+```c#
+[0000] [DxLibScene] scene1
+└ [0000] [DxLibLayer] layer1
+  └ [0000] [DxLibGameObject] player
+  └ [0001] [DxLibGameObject] wall1
+  └ [0002] [DxLibGameObject] wall2
+  └ [0003] [DxLibGameObject] door
+└ [0001] [DxLibLayer] layer2
+  └ [0003] [DxLibGameObject] tree1
+  └ [0003] [DxLibGameObject] tree2
+  └ [0003] [DxLibGameObject] tree3
+└ [0002] [DxLibLayer] layer3
+[0001] [DxLibScene] scene2
+└ [0000] [DxLibLayer] layer1
+└ [0001] [DxLibLayer] layer2
+└ [0002] [DxLibLayer] layer3
+...
+```
 # Creating a scene
 ### Reference 
 Scene(`string name`)
@@ -25,7 +48,7 @@ s.Add(test);
 ```
 # Creating GameObject
 ### Reference 
-Gameobject(`string name`, `int width`, `int height`)
+GameObject(`string name`, `int width`, `int height`)
 
 ```c#
 RenderTypeObject player1 = new GameObject();
