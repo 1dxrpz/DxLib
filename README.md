@@ -12,3 +12,6 @@ Scene scene = new Scene();
 ...
 scene.Render();
 ```
+#Creating GameObject
+Reference 
+Gameobject(`string name`, `int width`, `int height`)
