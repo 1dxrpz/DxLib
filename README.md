@@ -53,3 +53,31 @@ test.Add(player);
 ...
 ```
 
+# Creating label
+### Reference
+Label()
+
+```c#
+Label label1 = new Label();
+Label label2 = new Label();
+...
+layer1.Add(label1);
+layer2.Add(label2);
+```
+`.AddLine(string)`
+```c#
+...
+label1.AddLine("Hello");
+label1.AddLine("World");
+...
+```
+`.GetText()`
+```c#
+...
+string test = label1.GetText();
+Console.WriteLine(test);
+...
+```
+
+
+
